@@ -1,4 +1,3 @@
-# My-Internship-projectMIT License
 import tkinter as tk
 
 class Task:
@@ -11,7 +10,10 @@ class Task:
 class ToDoApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("To-Do List")
+        self.root.title("To Do List")
+
+        title_label = tk.Label(root, text="To Do List", font=("Arial", 16, "bold"), fg="black")
+        title_label.pack(pady=10)
 
         self.tasks = []
         self.completed_tasks = []
